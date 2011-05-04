@@ -56,8 +56,8 @@ __Failure__
     
 # Getting fortunes by URL #
 
-##Getting the number of fortune in the system##
-###URL: myfortune.heroku.com/fortune/count/###
+##Getting the number of fortunes in the system##
+###URL: myfortune.heroku.com/fortunes/###
 Will return a JSON object that looks like this:
 
 __Success__
