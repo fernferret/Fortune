@@ -18,6 +18,7 @@ class Fortune
   end
   
   get '/fortunes/?' do
+    content_type :json
     getFortuneCount()
   end
 
