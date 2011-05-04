@@ -16,6 +16,10 @@ class Fortune
   get '/fortune/?' do
     haml :index
   end
+  
+  get '/fortunes/?' do
+    getFortuneCount()
+  end
 
   post '/fortune/?' do
     @dataraw = params['data']

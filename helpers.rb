@@ -13,4 +13,7 @@ class Fortune
   def getFailData()
     {:data => {:fortune => nil, :result => "fail"}}.to_json
   end
+  def getFortuneCount()
+    {:data => {:count => $fortunes.size, :result => "success"}}.to_json
+  end
 end
