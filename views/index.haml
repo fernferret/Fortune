@@ -1,0 +1,30 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=ISO-8859-1", "http-equiv" => "Content-Type"}
+    %title Fortune
+    %link{:href => "/css/style.css", :media => "screen", :rel => "stylesheet"}
+  %body
+    = "Example: {\"id\": \"1\"}"
+    %br
+    = "or: {\"random\": \"true\"}"
+    %br
+    = "Note that if an id is specified it will take priority over the random tag"
+    - if(@data)
+      %br
+      = "You tested a post of the following, but it was invalid:"
+      %br
+      %strong
+        = "Raw JSON:"
+      %br
+      = @dataraw
+      %br
+      %strong
+        = "The Verdict:"
+      %br
+      = @data
+    %br
+    %form{:action => "", :method => "post"}
+      %textarea{:name => "data"}
+        = @dataraw
+      %input{:type => "submit", :value => "Submit JSON"}

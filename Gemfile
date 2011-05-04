@@ -1,0 +1,5 @@
+source :rubygems
+gem 'sinatra', :require => 'sinatra/base'
+gem 'haml'
+gem 'thin'
+gem 'json'
