@@ -1,6 +1,6 @@
 class Fortune
   get '/' do
-    haml :index
+    redirect("https://github.com/FernFerret/Fortune/blob/master/README.md")
   end
 
   get '/fortune/random/?' do
